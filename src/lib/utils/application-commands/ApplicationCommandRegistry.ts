@@ -380,7 +380,6 @@ export class ApplicationCommandRegistry {
 		guildId?: string
 	) {
 		try {
-			// @ts-expect-error I messed up the overload, PR https://github.com/discordjs/discord.js/pull/6970 needs to be released
 			const result = await commandsManager.create(apiData, guildId);
 
 			this.info(
